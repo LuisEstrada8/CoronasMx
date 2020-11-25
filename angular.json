@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CoronasMx"
+    }
+  },
+  "defaultProject": "CoronasMx",
+  "cli": {
+    "analytics": "d6094489-a66e-46c7-80fe-c2560a89fa30"
+  }
 }
