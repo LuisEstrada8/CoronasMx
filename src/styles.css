@@ -1,1 +1,195 @@
-/* You can add global styles to this file, and also import other style files */
+hr {
+    width: 100%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(232, 192, 102);
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+
+body {
+    background-color: #e9ebee;
+    font-family: Montserrat;
+}
+
+a {
+    color: gray;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: rgb(232, 192, 102);
+    padding: 10px 0px;
+}
+
+header .buscar form input[type="text"] {
+    width: 100%;
+    background: white;
+    border: none;
+    font-size: 12px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px 0 0 3px;
+    color: gray;
+}
+
+header .buscar form button {
+    width: 100%;
+    background: white;
+    border: none;
+    font-size: 12px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+header .buscar form button:hover {
+    background: wheat;
+    color: gray;
+}
+
+.swiper-img {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.swipper {
+    max-height: 500px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+}
+
+.swiper-pagination-bullet {
+    margin: 0px 5px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgb(209, 186, 133);
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+}
+
+ :root {
+    --swiper-theme-color: white;
+}
+
+.navbarcolor {
+    background-color: #E8C566;
+}
+
+.button-container {
+    display: inline-block;
+    position: relative;
+}
+
+.buttons-card {
+    position: absolute;
+    bottom: 0.2cm;
+    right: 0.3cm;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+}
+
+.card-header-item {
+    box-shadow: 0;
+    border: 0;
+    background-color: #E9EBEE;
+    cursor: pointer;
+}
+
+.btn-addcar {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 #666;
+    transition: all 0.1s ease-in-out;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    right: 0.05cm;
+}
+
+.btn-addcar:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+.corona-name {
+    font-weight: 700;
+}
+
+.price-text {
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.1s ease-in-out;
+}
+
+.price-text:hover {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.color {
+    color: black;
+}
+
+.precio {
+    color: tomato;
+    margin-top: 5%;
+}
+
+.separado {
+    margin-left: 10%;
+}
+
+.alinear {
+    text-align: center;
+}
+
+.color {
+    color: black;
+}
+
+div.swiper-slide {
+    background-color: rgb(189, 189, 189);
+}
+
+div.swiper-container {
+    padding-top: 3%;
+}

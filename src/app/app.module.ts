@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ForoComponent } from './Components/foro/foro.component';
 import { HomeComponent } from './Components/home/home.component';
 import { APP_ROUTING } from './app.routes';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -12,10 +13,11 @@ import { APP_ROUTING } from './app.routes';
     AppComponent,
     ForoComponent,
     HomeComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]

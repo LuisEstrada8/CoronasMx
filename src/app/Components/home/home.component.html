@@ -1,21 +1,4 @@
 <main>
-    <nav class="navbar navbar-expand-lg py-4" style="background-color: #E8C566;">
-        <a class="navbar-brand" style="color: black;">
-            <img src="https://i.pinimg.com/originals/21/30/f8/2130f8289a6541f67320e1b0ddf644c5.png" width="30" height="30" class="d-inline-block align-top" alt=""> CoronasMx
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            </ul>
-            <form class="form-inline my-2 my-lg-0 " style="margin: 5%;" routerLinkActive="active">
-                <a routerLink="['foro']"  class=" navbar-brand mr-sm-2">Empresa</a>
-                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">Iniciar sesion</button>
-            </form>
-        </div>
-    </nav>
     <!-- MODAL LOGIN AND SIGNUP -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -114,12 +97,13 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="swiper-container ">
+
+    <div class="container mt-4">
+        <div class="swiper-container" style="height: 300px; width: 1000px;">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="corona1.png" class="swiper-img" alt=""></div>
-                <div class="swiper-slide"><img src="corona2.png" class="swiper-img" alt=""></div>
-                <div class="swiper-slide"><img src="corona3.jpg" class="swiper-img" alt=""></div>
+                <div class="swiper-slide"><img src="corona1.png" class="swiper-img" alt="" style="height: 100px; width: 100px;"></div>
+                <div class="swiper-slide"><img src="https://comoorganizarlacasa.com/wp-content/uploads/2018/08/paso-a-paso-para-hacer-las-coronas-navidenas-modernas.png" class="swiper-img" alt="" style="height: 100px; width: 100px;"></div>
+                <div class="swiper-slide"><img src="https://www.decoactual.com/wp-content/uploads/2011/11/corona-navidena.jpg" class="swiper-img" alt="" style="height: 100px; width: 100px;"></div>
 
             </div>
             <div class="swiper-button-next"></div>
@@ -128,10 +112,7 @@
         </div>
     </div>
 </main>
-<script type="text/javascript" src="./assets/js/jquery-3.2.1.slim.min.js"></script>
-<script type="text/javascript" src="./assets/js/popper.min.js"></script>
-<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
     var swiper = new Swiper('.swiper-container', {
 
@@ -149,66 +130,179 @@
     });
 </script>
 
+<div class="container mt-5" style="width: 100%;">
+    <div class="card-columns">
+        <div class="card card-header-item mt-5">
+            <div class="button-container" style="display: flex;">
+                <img style="border-radius: 25px; height: 360px; " class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
+                <div class="buttons-card">
+                    <div type="button" class="btn-addcar">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card-body">
+                <br>
+                <p class="card-text corona-name alinear">Corona de navidad <br> 120cm x 60cm</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime dolores temporibus quia, consequuntur maiores laudantium non omnis fugit odio voluptate repudiandae quam facilis cum, inventore iure, neque reiciendis enim quibusdam!.</p>
+                <span class="badge badge-primary" style="position: absolute; top: 0.5cm;"> OFERTA </span>
+                <div class="card-footer" style="display: flex; justify-content: flex-end;">
+                    <div>
+                        <p class="mb-0"> <s>$ 150.00 MXN </s> </p>
+                        <p class="price-text"> $ 100.00 MXN </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-header-item">
+            <div class="button-container" style="display: flex;">
+                <img style="border-radius: 25px; height: 360px; " class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
+                <div class="buttons-card">
+                    <div type="button" class="btn-addcar">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
 
-<div class="row">
-<div class="card-deck m-5" style="width: 18rem;">
-<div class="card">
-  <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text alinear">Corona de navidad <br> 120cm x 60cm</p>
-    <br>
-    <br>
-    <div class="card-footer d-flex justify-content-between" >
-      <h5 class="precio">$200</h5> 
-      <button type="button" class="btn btn-outline-primary"><strong>Ver más...</strong></button>
+            <div class="card-body">
+                <br>
+                <p class="card-text corona-name alinear">Corona de navidad <br> 120cm x 60cm</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa laudantium, modi sunt rerum iusto maxime nemo officiis illo aliquam, consectetur, beatae facere aliquid! Voluptatem doloribus inventore et corrupti quia.</p>
+                <!-- <span class="badge badge-primary" style="position: absolute; top: 0.5cm;"> OFERTA </span> -->
+                <div class="card-footer" style="display: flex; justify-content: flex-end;">
+                    <div>
+                        <!-- <p class="mb-0"> <strike>$ 150.00 MXN</strike> </p> -->
+                        <p class="price-text"> $ 100.00 MXN </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-header-item">
+            <div class="button-container" style="display: flex;">
+                <img style="border-radius: 25px; height: 360px; " class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
+                <div class="buttons-card">
+                    <div type="button" class="btn-addcar">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <br>
+                <p class="card-text corona-name alinear">Corona de navidad <br> 120cm x 60cm</p>
+                <br>
+                <p>Siente la navidad mas cerca con esta corona navideña en tu puerta.</p>
+                <span class="badge badge-primary" style="position: absolute; top: 0.5cm;"> OFERTA </span>
+                <div class="card-footer" style="display: flex; justify-content: flex-end;">
+                    <div>
+                        <p class="mb-0"> <s>$ 150.00 MXN </s> </p>
+                        <p class="price-text"> $ 100.00 MXN </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-header-item">
+            <div class="button-container" style="display: flex;">
+                <img style="border-radius: 25px; height: 360px; " class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
+                <div class="buttons-card">
+                    <div type="button" class="btn-addcar">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <br>
+                <p class="card-text corona-name alinear">Corona de navidad <br> 120cm x 60cm</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime dolores temporibus quia, consequuntur maiores laudantium non omnis fugit odio voluptate repudiandae quam facilis cum, inventore iure, neque reiciendis enim quibusdam!.</p>
+                <span class="badge badge-primary" style="position: absolute; top: 0.5cm;"> OFERTA </span>
+                <div class="card-footer" style="display: flex; justify-content: flex-end;">
+                    <div>
+                        <p class="mb-0"> <s>$ 150.00 MXN </s> </p>
+                        <p class="price-text"> $ 100.00 MXN </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-header-item">
+            <div class="button-container" style="display: flex;">
+                <img style="border-radius: 25px; height: 360px; " class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
+                <div class="buttons-card">
+                    <div type="button" class="btn-addcar">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <br>
+                <p class="card-text corona-name alinear">Corona de navidad <br> 120cm x 60cm</p>
+                <br>
+                <p>Sorprende a tus visitas con esta corona navideña en epocas de santa clos</p>
+                <!-- <span class="badge badge-primary" style="position: absolute; top: 0.5cm;"> OFERTA </span> -->
+                <div class="card-footer" style="display: flex; justify-content: flex-end;">
+                    <div>
+                        <!-- <p class="mb-0"> <strike>$ 150.00 MXN</strike> </p> -->
+                        <p class="price-text"> $ 100.00 MXN </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-header-item">
+            <div class="button-container" style="display: flex;">
+                <img style="border-radius: 25px; height: 360px; " class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
+                <div class="buttons-card">
+                    <div type="button" class="btn-addcar">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <br>
+                <p class="card-text corona-name alinear">Corona de navidad <br> 120cm x 60cm</p>
+                <br>
+                <p>Siente la navidad mas cerca con esta corona navideña en tu puerta.</p>
+                <span class="badge badge-primary" style="position: absolute; top: 0.5cm;"> OFERTA </span>
+                <div class="card-footer" style="display: flex; justify-content: flex-end;">
+                    <div>
+                        <p class="mb-0"> <s>$ 150.00 MXN </s></p>
+                        <p class="price-text"> $ 100.00 MXN </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 
-<div class="card-deck m-5" style="width: 18rem;">
-<div class="card">
-  <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text alinear">Corona de navidad <br> 120cm x 60cm</p>
-    <br>
-    <br>
-    <div class="card-footer d-flex justify-content-between" >
-      <h5 class="precio">$200</h5> 
-      <button type="button" class="btn btn-outline-primary"><strong>Ver más...</strong></button>
-    </div>
-  </div>
-</div>
-</div>
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <nav class="row">
+            <a href="" class="col text-reset d-flex align-items-center font-weight-bold" style="color:blanchedalmond">
+                <img src="https://i.pinimg.com/originals/21/30/f8/2130f8289a6541f67320e1b0ddf644c5.png" width="50" height="50" alt=""> CoronasMx
+            </a>
 
-<div class="card-deck m-5" style="width: 18rem;">
-<div class="card">
-  <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text alinear">Corona de navidad <br> 120cm x 60cm</p>
-    <br>
-    <br>
-    <div class="card-footer d-flex justify-content-between" >
-      <h5 class="precio">$200</h5> 
-      <button type="button" class="btn btn-outline-primary"><strong>Ver más...</strong></button>
-    </div>
-  </div>
-</div>
-</div>
+            <div class="col-3 font-weight-bold">
+                <p>
+                    DIreccion: <br> K.m 6.7, México 85, 89930 Quintero, Tamps.
+                </p>
 
-<div class="card-deck m-5" style="width: 18rem;">
-<div class="card">
-  <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_629393-MLU43337483325_092020-V.jpg" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text alinear">Corona de navidad <br> 120cm x 60cm</p>
-    <br>
-    <br>
-    <div class="card-footer d-flex justify-content-between" >
-      <h5 class="precio">$200</h5> 
-      <button type="button" class="btn btn-outline-primary"><strong>Ver más...</strong></button>
+            </div>
+            <div class="col-3 font-weight-bold">
+                Contacto: <br> CoronasMx@gmail.com
+            </div>
+            <ul class="col-3 list-unstyled">
+                <li class="font-weight-bold text-upppercase">Redes Sociales</li>
+                <li class="d-flex justify-content-between">
+                    <a href="" class="text-reset"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="text-reset"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="text-reset"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+            </ul>
+        </nav>
     </div>
-  </div>
-</div>
-</div>
-</div> 
+</footer>
