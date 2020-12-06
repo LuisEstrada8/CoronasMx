@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class AppService {
 
-  URL = 'http://localhost:3040/';
+  // URL = 'http://localhost:3040/';
+  URL = 'https://coronasmx.herokuapp.com/';
   constructor() { }
 }
