@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>SHOPPING CART</h1>
+        </div>
+        <div class="col-12">
+            <table class="table table-bordered table-hover" *ngIf="shoppingCart">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of shoppingCart">
+                        <td>{{item.producto.nombre}}</td>
+                        <td>{{item.producto.precio | currency: 'MXN'}}</td>
+                        <td>{{item.cantidad}}</td>
+                        <td>{{item.producto.precio * item.cantidad | currency: 'MXN'}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 class="text-center" *ngIf="!shoppingCart"> aun no tienes productos en el carrito</h1>
+        </div>
+        <div class="col-12 text-right">
+            <button class="btn btn-primary" *ngIf="shoppingCart" (click)="openSwal()">Pagar</button>
+        </div>
+    </div>
+</div>
+<swal #swalShop title="Confirmar compra" [showConfirmButton]="false">
+    <div *swalPortal class="credit-card">
+        <h3>Resumen de la compra</h3>
+        <div class="productos border-blue">
+            <h4 class="text-left">Productos</h4>
+            <ul class="text-left">
+                <li *ngFor="let item of shoppingCart">
+                    {{item.producto.nombre}}
+                </li>
+            </ul>
+        </div>
+        <h5 class="text-left"><strong>total: </strong>{{total | currency: 'MXN'}}</h5>
+        <form novalidate (ngSubmit)="createToken()" [formGroup]="stripeTest">
+
+            <div class="form-group text-left">
+                <label class="text-left">Nombre del comprador: </label>
+                <input type="text" formControlName="name" placeholder="Nombre completo" class="form-control mb-2"
+                    disabled>
+            </div>
+            <div class="form-group text-left">
+                <label class="text-left">Datos de la tarjeta: </label>
+                <ngx-stripe-card [options]="cardOptions" [elementsOptions]="elementsOptions">
+                </ngx-stripe-card>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">
+                Realizar compra
+            </button>
+        </form>
+    </div>
+</swal>
